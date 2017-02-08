@@ -17,7 +17,7 @@ public class OperationPanel {
 		operationBar.setRollover(true);
 
 		
-		JComboBox combo = new JComboBox(new String[] {"Select from below","A","B"});
+		JComboBox combo = new JComboBox(new String[] {"Select from below","Calculate resistence","B"});
 		combo.addActionListener(new OperationListener());
 		operationBar.add(combo);
 		option_panel.add(operationBar, BorderLayout.EAST);

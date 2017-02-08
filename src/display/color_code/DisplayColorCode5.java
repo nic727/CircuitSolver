@@ -1,9 +1,13 @@
 package display.color_code;
 
+import java.awt.Color;
+
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
+import components.resistors.Resistor;
 
 public class DisplayColorCode5 {
 	public static JPanel p;
@@ -27,6 +31,15 @@ public class DisplayColorCode5 {
 		d.setLocationRelativeTo(f);
 		d.setSize(500, 500);
 		d.setLayout(null);
+		
+		//temporary - warning that this window does not yet work
+		JLabel warning = new JLabel();
+		warning.setForeground(Color.RED);
+		warning.setText("This page is not finished");
+		warning.setBounds(100, 60, 200, 50);
+		warning.setLayout(null);
+		p.add(warning);
+		////////////////////////////////////////////////////////
 
 		p.setLayout(null);
 		ButtonActionHandler.getColorButtonAction(p,Initializer.bands3,Initializer.bands3);

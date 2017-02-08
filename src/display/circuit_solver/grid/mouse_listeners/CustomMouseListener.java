@@ -49,7 +49,8 @@ public class CustomMouseListener implements MouseListener{
     }
 
     public void mouseEntered(MouseEvent e) {
-    	GridPanel.panel_map.setFocusable(true);
+    	GridPanel.panel_map.requestFocusInWindow();
+    
     	
     	if(e.getComponent().getClass() == JLabel.class){
     		System.out.println("in jlabel");

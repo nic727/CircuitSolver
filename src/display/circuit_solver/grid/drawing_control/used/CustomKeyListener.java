@@ -9,6 +9,7 @@ public class CustomKeyListener implements KeyListener{
 	@Override
 	public void keyPressed(KeyEvent e) {
 		if(e.getKeyCode() == KeyEvent.VK_SHIFT){
+			System.out.println("HELLLLLLLLLLLLLLLLLLLLLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
 			holded = true;
 			System.out.println("holded: "+holded);
 		}

@@ -52,6 +52,7 @@ public class GridPanel {
 		
 		
 		panel_map.setLayout(layout);
+		//panel_map.setDoubleBuffered(true);
 		panel_map.setBorder(BorderFactory
 						.createEtchedBorder(EtchedBorder.LOWERED));
      	panel_map.setVisible(true);

@@ -1,5 +1,7 @@
 package display;
 
+import java.awt.Color;
+import java.awt.Container;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,6 +17,7 @@ public class DisplayMenu {
 	
 	public static JButton button_colorCode;
 	public static JButton button_circuitSolver;	
+	public static Color custom_GRAY;
 	
 	public static void constructor(){
 		JFrame frame = new JFrame("Circuit solver");
@@ -25,6 +28,9 @@ public class DisplayMenu {
         
         JPanel panel = new JPanel();
         panel.setLayout(null);
+        
+        custom_GRAY = Color.decode("#696969");
+        panel.setBackground(custom_GRAY);
         
         buttonAction();
          

@@ -31,6 +31,8 @@ public class DisplayCircuitSolver {
 		GridPanel g_panel = new GridPanel(base_panel);
 		ComponentsPanel c_panel = new ComponentsPanel();
 		
+//		base_panel.add(g_panel);
+		
 		d.setVisible(true);
 	}
 

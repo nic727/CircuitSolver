@@ -1,5 +1,8 @@
 package display.circuit_solver.grid.mouse_listeners;
 
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 
@@ -37,7 +40,13 @@ public class CustomMouseMotionListener implements MouseMotionListener{
 				GridPanel.x_final = e.getX();
 				GridPanel.y_final = e.getY();
 	}
-				LineGraphics.paint(GridPanel.panel_map.getGraphics(),GridPanel.x_start,GridPanel.y_start,GridPanel.x_final,GridPanel.y_final);
+				Graphics g = GridPanel.panel_map.getGraphics();
+			
+				LineGraphics.paint(g,GridPanel.x_start,GridPanel.y_start,GridPanel.x_final,GridPanel.y_final);
+//				GridPanel.line_specification.add(GridPanel.x_start);
+//				GridPanel.line_specification.add(GridPanel.y_start);
+//				GridPanel.line_specification.add(GridPanel.x_final);
+//				GridPanel.line_specification.add(GridPanel.y_final);
 				
 			}
 	}
